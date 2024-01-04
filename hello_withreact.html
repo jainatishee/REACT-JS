@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    <div id="root">
+        <!-- <h1>Namaste React!</h1> -->
+    </div>
+</body>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        // h1 is element/object. (element, object or additional properties, content)
+        const heading = React.createElement("h1", {
+            id: "title"
+        }, "Namaste Reactjs");
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        //passing a react element inside the root which means we change the DOM
+        root.render(heading);
+
+    </script>
+</html>
+
+<!-- Shortest program of react -->
